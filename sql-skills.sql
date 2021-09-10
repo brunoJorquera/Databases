@@ -5,7 +5,7 @@ Values
 (
 	'Slim Pancake'
 ),(
-	'25 Cents'
+	'500 Cents'
 ),(
 	'ThreePack'
 );
