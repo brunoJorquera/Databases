@@ -69,3 +69,23 @@ FROM album al
 JOIN artist ar
 ON al.artist_id = ar.artist_id;
 
+-- EXTRA CREDIT
+
+SELECT * FROM artist
+ORDER BY name DESC
+LIMIT 10;
+
+SELECT * FROM artist
+WHERE name LIKE 'Black%';
+
+SELECT * FROM artist
+WHERE name LIKE '%Black%'
+
+SELECT * FROM employee
+ORDER BY birth_date DESC
+LIMIT 1;
+
+SELECT * FROM employee
+ORDER BY birth_date
+LIMIT 1
+
