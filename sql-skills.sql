@@ -94,3 +94,30 @@ WHERE billing_state IN ('AZ','TX','CA');
 
 SELECT avg(total) FROM invoice
 WHERE billing_state IN ('AZ','TX','CA');
+
+SELECT pt.track_id
+FROM playlist_track pt
+JOIN playlist p 
+On pt.playlist_id = p.playlist_id
+WHERE p.name ='Music'
+
+ SELECT tr.name
+FROM track tr
+JOIN playlist_track p
+ON tr.track_id = p.track_id
+WHERE playlist_id = 5;
+
+SELECT tr.name, p.name
+FROM track tr
+JOIN playlist_track pt
+ON tr.track_id = pt.track_id
+JOIN playlist p
+ON p.playlist_id = pt.playlist_id
+
+SELECT tr.name, a.title
+FROM track tr
+JOIN album a
+ON tr.album_id = a.album_id
+JOIN genre g
+On tr.genre_id = g.genre_id
+WHERE g.name = 'Alternative & Punk'
