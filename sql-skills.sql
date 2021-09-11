@@ -89,3 +89,8 @@ SELECT * FROM employee
 ORDER BY birth_date
 LIMIT 1
 
+SELECT count(total) FROM invoice
+WHERE billing_state IN ('AZ','TX','CA');
+
+SELECT avg(total) FROM invoice
+WHERE billing_state IN ('AZ','TX','CA');
